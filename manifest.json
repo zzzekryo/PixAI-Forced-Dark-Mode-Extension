@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PixAI Forced Dark Mode",
+  "version": "1.0",
+  "description": "Forces Dark theme on PixAI without altering images. May not work in subdomains.",
+  "content_scripts": [
+    {
+      "matches": ["https://pixai.art/*"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+/* Forzar fondo oscuro profundo en todo el sitio */
+html, body, #__next, main, nav, aside, 
+div[class*="bg-"], section, header, footer {
+    background-color: #0f0f11 !important;
+    color: #f3f4f6 !important;
+    border-color: #27272a !important;
+}
+
+/* Ajuste para tarjetas, menús flotantes y contenedores secundarios */
+div[class*="bg-white"], div[class*="bg-neutral"], .bg-white, 
+ul, li, input, textarea, select, button:not([class*="bg-primary"]) {
+    background-color: #18181b !important;
+    color: #e4e4e7 !important;
+    border-color: #3f3f46 !important;
+}
+
+/* Asegurar que los textos claros sigan siendo legibles */
+p, span, h1, h2, h3, h4, h5, h6, a, label {
+    color: #f3f4f6 !important;
+}
+
+/* Mantener los colores originales de los botones de PixAI */
+button[class*="bg-primary"], a[class*="bg-primary"], .bg-purple-600 {
+    background-color: #6d28d9 !important;
+    color: #ffffff !important;
+}
+
+/* Protege las imágenes generadas por IA para que no cambien de color */
+img, video, canvas, [style*="background-image"], .grid img, [class*="aspect-"] img {
+    filter: none !important;
+    background-color: transparent !important;
+}
+
+/* Evitar líneas o sombras blancas brillantes */
+* {
+    border-color: #27272a !important;
+    box-shadow: none !important;
+}
